@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products - The Lunar Bee</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>The Lunar Bee</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </div>    
+  </header>
+  
+  <main>
+    <section>
+      <h2>Our Products</h2>
+      
+      <div class="filters">
+        <label for="priceRange">Price Range:</label>
+        <select id="priceRange" onchange="filterProducts()">
+          <option value="all">All</option>
+          <option value="0-20">$0 - $20</option>
+          <option value="20-50">$20 - $50</option>
+          <option value="50+">$50+</option>
+        </select>
+        
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search Products" oninput="filterProducts()">
+        </div>
+      </div>
+
+      <div class="products-container">
+        <!-- Product elements go here -->
+        <div class="product" data-id="1">
+          <img src="crystal1.jpg" alt="Crystal 1">
+          <h3>Crystal 1</h3>
+          <p class="description">Lorem.</p>
+          <p class="price">$29.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
+        <div class="product" data-id="2">
+          <img src="crystal2.jpg" alt="Crystal 2">
+          <h3>Crystal 2</h3>
+          <p class="description">ipsum.</p>
+          <p class="price">$16.50</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
+        <div class="product" data-id="3">
+          <img src="crystal3.jpg" alt="Crystal 3">
+          <h3>Crystal 3</h3>
+          <p class="description">dolor.</p>
+          <p class="price">$20.50</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="4">
+          <img src="crystal4.jpg" alt="Crystal 4">
+          <h3>Crystal 4</h3>
+          <p class="description">sit.</p>
+          <p class="price">$14.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="5">
+          <img src="crystal5.jpg" alt="Crystal 5">
+          <h3>Crystal 5</h3>
+          <p class="description">amet.</p>
+          <p class="price">$39.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="6">
+          <img src="crystal6.jpg" alt="Crystal 6">
+          <h3>Crystal 6</h3>
+          <p class="description">consectetur</p>
+          <p class="price">$42.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="7">
+          <img src="crystal7.jpg" alt="Crystal 7">
+          <h3>Crystal 7</h3>
+          <p class="description">adipiscing.</p>
+          <p class="price">$19.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="8">
+          <img src="crystal8.jpg" alt="Crystal 8">
+          <h3>Crystal 8</h3>
+          <p class="description">elit.</p>
+          <p class="price">$55.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="9">
+          <img src="crystal9.jpg" alt="Crystal 9">
+          <h3>Crystal 9</h3>
+          <p class="description">elit.</p>
+          <p class="price">$43.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="10">
+          <img src="crystal10.jpg" alt="Crystal 10">
+          <h3>Crystal 10</h3>
+          <p class="description">elit.</p>
+          <p class="price">$17.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="11">
+          <img src="crystal11.jpg" alt="Crystal 11">
+          <h3>Crystal 11</h3>
+          <p class="description">elit.</p>
+          <p class="price">$49.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="12">
+          <img src="crystal12.jpg" alt="Crystal 12">
+          <h3>Crystal 12</h3>
+          <p class="description">elit.</p>
+          <p class="price">$51.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="13">
+          <img src="crystal13.jpg" alt="Crystal 13">
+          <h3>Crystal 13</h3>
+          <p class="description">elit.</p>
+          <p class="price">$38.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="14">
+          <img src="crystal14.jpg" alt="Crystal 14">
+          <h3>Crystal 14</h3>
+          <p class="description">elit.</p>
+          <p class="price">$61.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="15">
+          <img src="crystal15.jpg" alt="Crystal 15">
+          <h3>Crystal 15</h3>
+          <p class="description">elit.</p>
+          <p class="price">$16.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="16">
+          <img src="crystal16.jpg" alt="Crystal 16">
+          <h3>Crystal 16</h3>
+          <p class="description">elit.</p>
+          <p class="price">$38.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product" data-id="17">
+          <img src="crystal17.jpg" alt="Crystal 17">
+          <h3>Crystal 17</h3>
+          <p class="description">elit.</p>
+          <p class="price">$5.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="page-numbers"></div>
+      <div class="pagination-container">
+        <button class="previous-page" onclick="goToPreviousPage()">Previous</button>
+        <div class="page-numbers"></div>
+        <button class="next-page" onclick="goToNextPage()">Next</button>
+      </div>      
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Your Business. All rights reserved.</p>
+  </footer>
+</body>
+</html>
